@@ -11,9 +11,14 @@
 
     <link rel="shortcut icon" href="../favicon.ico">
 
-    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Merriweather:300,700,700italic,300italic%7COpen+Sans:700,400">
-    <link rel="stylesheet" type="text/css" href="../assets/css/screen.css?v=4bfef29cd8">
+    <script type="text/javascript" src="../assets/js/vendor/fastclick.js?v=4bfef29cd8"></script>
+    <script type="text/javascript" src="../assets/js/vendor/modernizr.js?v=4bfef29cd8"></script>
 
+    <!--[if lte IE 8]>
+        <link rel="stylesheet" type="text/css" href="/assets/css/outdatedBrowser/outdatedBrowser.min.css?v=4bfef29cd8">
+    <![endif]-->
+    <link rel="stylesheet" type="text/css" href="../assets/css/ichi.css?v=4bfef29cd8">
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Open+Sans:300,700,400%7CSource+Sans+Pro:300,400,600,700,900,300italic,400italic,600italic,700italic,900italic">
 
     <link rel="canonical" href="http://localhost:2368/my-first-post/">
     <meta name="referrer" content="no-referrer-when-downgrade">
@@ -69,105 +74,161 @@
     <meta name="generator" content="Ghost 0.11">
     <link rel="alternate" type="application/rss+xml" title="Run at All Costs" href="http://localhost:2368/rss/">
 </head>
-<body class="post-template nav-closed">
+<body class="post-template">
 
-    <div class="nav">
-    <h3 class="nav-title">Menu</h3>
-    <a href="index.html#" class="nav-close">
-        <span class="hidden">Close</span>
-    </a>
-    <ul>
-            <li class="nav-dear-home"><a href="http://localhost:2368/">Dear Home</a></li>
-    </ul>
-        <a class="subscribe-button icon-feed" href="http://localhost:2368/rss/">Subscribe</a>
+<div id="outdated">
+    <h6>Your browser is out-of-date!</h6>
+    <p>Update your browser to view this website correctly. <a id="btnUpdate" href="http://outdatedbrowser.com/">Update my browser now</a></p>
 </div>
-<span class="nav-cover"></span>
 
+<nav class="top-bar hide-for-large-up" data-topbar>
+  <ul class="title-area">
+    <li class="name">
+      
+    </li>
+    <li class="home"><a class="fi-home" href="http://localhost:2368"></a></li>
+    <li class="toggle-topbar"><a href="index.html#" id="trigger-overlay" class="fi-list"></a></li>
+  </ul>
 
-    <div class="site-wrapper">
+<div class="overlay overlay-scale">
+    <button type="button" class="overlay-close">Close</button>
+    <nav>
+        <ul>
+                <li><a href="http://localhost:2368/">Dear Home</a></li>
 
-        
-
-
-<header class="main-header post-head no-cover">
-    <nav class="main-nav  clearfix">
-        <a class="blog-logo" href="http://localhost:2368"><img src="../content/images/2017/05/pronghorn.png" alt="Run at All Costs"></a>
-            <a class="menu-button icon-menu" href="index.html#"><span class="word">Menu</span></a>
+        </ul>
     </nav>
+</div>
+
+</nav>
+
+<div class="row">
+
+<div class="small-16 medium-16 large-4 columns head-area">
+
+<header class="site-head">
+    <div class="vertical">
+        <div class="site-head-content inner">
+            <ul class="side-nav blog-menu show-for-large-up">
+                    <li><a href="http://localhost:2368/">Dear Home</a></li>
+
+            </ul>
+            <a class="blog-logo" href="http://localhost:2368"><img alt="Run at All Costs" src="../content/images/2017/05/pronghorn.png"></a>
+            <h1 class="blog-title">Run at All Costs</h1>
+            <hr>
+            <p class="blog-description">Thoughts, stories and ideas.</p>
+            <div class="blog-network">
+<!--                 <a href="#" class="fi-social-pinterest"></a>
+                <a href="#" class="fi-social-linkedin"></a>
+                <a href="#" class="fi-social-behance"></a>
+                <a href="#" class="fi-social-deviant-art"></a>
+                <a href="#" class="fi-social-dribbble"></a>
+                <a href="#" class="fi-social-flickr"></a>
+                <a href="#" class="fi-social-github"></a>
+                <a href="#" class="fi-social-skype"></a>
+                <a href="#" class="fi-social-snapchat"></a>
+                <a href="#" class="fi-social-steam"></a>
+                <a href="#" class="fi-social-xbox"></a>
+                <a href="#" class="fi-social-reddit"></a> -->
+                <a href="index.html#" class="fi-rss"></a>
+                <a href="index.html#" class="fi-social-google-plus"></a>
+                <a href="index.html#" class="fi-social-youtube"></a>
+                <a href="index.html#" class="fi-social-twitter"></a>
+                <a href="index.html#" class="fi-social-facebook"></a>
+            </div>
+        </div>
+    </div>
 </header>
 
+</div>
+
+
+<div class="small-16 medium-16 large-12 columns main-column">
+    
+
 <main class="content" role="main">
+
     <article class="post">
 
-        <header class="post-header">
+
             <h1 class="post-title">My first Post</h1>
-            <section class="post-meta">
-                <time class="post-date" datetime="2017-05-20">20 May 2017</time> 
+
+            <span class="post-meta label"><time datetime="2017-05-20">20 May 2017</time></span>
+
+            <section class="post-content">
+                <p>just type in my first line :)</p>
+                        <aside class="tags fi-pricetag-multiple">No tag</aside>
             </section>
-        </header>
+            <hr>
+            <footer class="post-footer">
 
-        <section class="post-content">
-            <p>just type in my first line :)</p>
-        </section>
+                <section class="share">
+                    <h4>Liked this post ? Share it.</h4>
+                    <a class="fi-social-facebook" href="https://www.facebook.com/sharer/sharer.php?u=http://localhost:2368/my-first-post/" onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
+                    </a>
+                    <a class="fi-social-twitter" href="https://twitter.com/share?text=My%20first%20Post&amp;url=http://localhost:2368/my-first-post/" onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
+                    </a>
+                    <a class="fi-social-google-plus" href="https://plus.google.com/share?url=http://localhost:2368/my-first-post/" onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;">
+                    </a>
+                </section>
 
-        <footer class="post-footer">
+                <section class="author">
+                    <header>
+                        <span>About the author</span>
+                    </header>
+                    <section>
+                        <h4>Scott SHCheng</h4>
+                        <img src="../content/images/2017/05/IMG_7321-2.JPG">
+                        
+                        
+                    </section>
+                    <footer>
+                         <p></p>
+                    </footer>
+                </section>
 
+        <div class="clearfix"></div>
+                    <hr>
 
-            <figure class="author-image">
-                <a class="img" href="../author/scott/" style="background-image: url(../content/images/2017/05/IMG_7321-2.JPG)"><span class="hidden">Scott SHCheng's Picture</span></a>
-            </figure>
+            </footer>
 
-            <section class="author">
-                <h4><a href="../author/scott/">Scott SHCheng</a></h4>
+        <h3 class="title-disqus"><span class="fi-comments"></span>Discussions</h3>
+        <div id="disqus_thread"></div>
+<script>
 
-                    <p>Read <a href="../author/scott/">more posts</a> by this author.</p>
-                <div class="author-meta">
-                    
-                    
-                </div>
-            </section>
-
-
-            <section class="share">
-                <h4>Share this post</h4>
-                <a class="icon-twitter" href="https://twitter.com/intent/tweet?text=My%20first%20Post&amp;url=http://localhost:2368/my-first-post/" onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
-                    <span class="hidden">Twitter</span>
-                </a>
-                <a class="icon-facebook" href="https://www.facebook.com/sharer/sharer.php?u=http://localhost:2368/my-first-post/" onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
-                    <span class="hidden">Facebook</span>
-                </a>
-                <a class="icon-google-plus" href="https://plus.google.com/share?url=http://localhost:2368/my-first-post/" onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;">
-                    <span class="hidden">Google+</span>
-                </a>
-            </section>
-
-
-        </footer>
+/**
+*  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+*  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+/*
+var disqus_config = function () {
+this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+};
+*/
+(function() { // DON'T EDIT BELOW THIS LINE
+var d = document, s = d.createElement('script');
+s.src = 'https://scottshcheng-github-io-ghblog.disqus.com/embed.js';
+s.setAttribute('data-timestamp', +new Date());
+(d.head || d.body).appendChild(s);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
 
     </article>
+
 </main>
 
-<aside class="read-next">
-    <a class="read-next-story prev no-cover" href="../welcome-to-ghost/">
-        <section class="post">
-            <h2>Welcome to Ghost</h2>
-            <p>You're live! Nice. We've put together a little post to introduce you to the Ghost editor and get you…</p>
-        </section>
-    </a>
-</aside>
+</div>
 
+</div>
 
+    <!--[if lte IE 8]>
+        <script type="text/javascript" src="/assets/js/outdatedBrowser.min.js?v=4bfef29cd8"></script>
+    <![endif]-->
+    <script type="text/javascript" src="../assets/js/dest/built.min.js?v=4bfef29cd8"></script>
 
-        <footer class="site-footer clearfix">
-            <section class="copyright"><a href="http://localhost:2368">Run at All Costs</a> © 2017</section>
-            <section class="poweredby">Proudly published with <a href="https://ghost.org">Ghost</a></section>
-        </footer>
-
-    </div>
-
-    <script type="text/javascript" src="http://code.jquery.com/jquery-1.12.0.min.js"></script>
-    
-    <script type="text/javascript" src="../assets/js/jquery.fitvids.js?v=4bfef29cd8"></script>
-    <script type="text/javascript" src="../assets/js/index.js?v=4bfef29cd8"></script>
-
+    <script>
+      $(document).foundation();
+    </script>
 </body>
